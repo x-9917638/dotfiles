@@ -1,7 +1,0 @@
-/*
-* Css Colors
-* Generated with Matugen
-*/
-@define-color background {{colors.primary_container.default.rgba | set_alpha: 0.5}};
-@define-color text {{colors.on_primary_container.default.rgb}};
-@define-color text-secondary {{colors.inverse_primary.default.rgb}};
