@@ -1,12 +1,10 @@
-# dotfiles
-## Install
-Choose your desired files from /.config/ and copy them into your .config folder. Make sure to back up existing settings first!
-## Demo
+This repo contains my dotfiles for various systems.
 
-https://github.com/user-attachments/assets/2224d444-cfa4-4234-a3b8-90218f1ab988
+It currently contains 2 branches:
+- old: My old dotfiles. Almost none of the configuration is in use. The organisation in this branch is very bad, and I will **not** be updating it.
+- arch: My dotfiles that I use on my Arch Linux daily driver.
 
-https://github.com/user-attachments/assets/0c0a1e15-42ba-493b-b077-775e332f3b97
+In the future, this repo may contain additional branches.
 
-![Discord](https://github.com/user-attachments/assets/34901106-a518-4e5a-b006-f22969d8b6f2)
-![vscode](https://github.com/user-attachments/assets/6509d54c-14fd-4a21-b0a6-bc244867eef8)
-![rofi](https://github.com/user-attachments/assets/cd24870d-66d4-47bf-91b5-2082dbaca71b)
+TODO:
+- (branch) nixOs: Bad Nix configuration as I experiment with NixOS on an unused laptop.
