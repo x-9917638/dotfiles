@@ -1,5 +1,12 @@
 {
     "discordBranch": "stable",
     "minimizeToTray": true,
-    "arRPC": true
+    "arRPC": true,
+    "splashColor": "color(srgb 0.984314 0.984314 0.984314)",
+    "splashBackground": "rgb(18, 18, 20)",
+    "hardwareVideoAcceleration": true,
+    "staticTitle": true,
+    "disableMinSize": true,
+    "appBadge": false,
+    "splashPixelated": true
 }
