@@ -1,0 +1,82 @@
+theme[main_bg]=""
+
+# Main text color
+theme[main_fg]="#e6e1e9"
+
+# Title color for boxes
+theme[title]="#e6e1e9"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#cbbeff"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#3a383e"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#eeb8cb"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#2b292f"
+
+# Color of text appearing on top of graphs, i.e uptime and current network graph scaling
+theme[graph_text]="#e6e1e9"
+
+# Background color of the percentage meters
+theme[meter_bg]="#3a383e"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#e6e1e9"
+
+# CPU, Memory, Network, Proc box outline colors
+theme[cpu_box]="#cbbeff" 
+theme[mem_box]="#cac3dc" 
+theme[net_box]="#eeb8cb" 
+theme[proc_box]="#ffb4ab" 
+
+# Box divider line and small boxes line color
+theme[div_line]="#3a383e"
+
+# Temperature graph color 
+theme[temp_start]="#78c878"
+theme[temp_mid]="#c8c878"
+theme[temp_end]="#c87878"
+
+# CPU graph colors 
+theme[cpu_start]="#91d5ad"
+theme[cpu_mid]="#c6bfff"
+theme[cpu_end]="#7878c8"
+
+# Mem/Disk free meter 
+theme[free_start]="#a578a5"
+theme[free_mid]="#7878c8"
+theme[free_end]="#c6bfff"
+
+# Mem/Disk cached meter 
+theme[cached_start]="#454077"
+theme[cached_mid]="#c6bfff"
+theme[cached_end]="#7878c8"
+
+# Mem/Disk available meter 
+theme[available_start]="#ffb77b"
+theme[available_mid]="#c8a578"
+theme[available_end]="#ffb1c4"
+
+# Mem/Disk used meter 
+theme[used_start]="#91d5ad"
+theme[used_mid]="#78c878"
+theme[used_end]="#78c878"
+
+# Download graph colors 
+theme[download_start]="#ffb77b"
+theme[download_mid]="#c8a578"
+theme[download_end]="#ffb1c4"
+
+# Upload graph colors 
+theme[upload_start]="#91d5ad"
+theme[upload_mid]="#78c878"
+theme[upload_end]="#78c878"
+
+# Process box color gradient for threads, mem and cpu usage 
+theme[process_start]="#cbbeff"
+theme[process_mid]="#cbbeff"
+theme[process_end]="#e7deff"

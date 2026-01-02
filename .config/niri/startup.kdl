@@ -1,0 +1,10 @@
+spawn-at-startup    "waybar"
+spawn-at-startup    "/usr/lib/polkit-kde-authentication-agent-1"
+spawn-at-startup    "hypridle"
+spawn-at-startup    "keepassxc"
+spawn-at-startup    "niriusd"
+
+// spawn-sh-at-startup "kitten panel --focus-policy=on-demand --layer=top --toggle-visibility --single-instance --edge=center-sized --columns=60 --lines=2 --detach --class 'quick-run' bash --rcfile ~/.run_profilerc"
+spawn-sh-at-startup "wl-paste --watch cliphist store"
+spawn-sh-at-startup "waypaper --restore"
+spawn-sh-at-startup "walker --gapplication-service"

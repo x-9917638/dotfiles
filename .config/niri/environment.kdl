@@ -1,0 +1,15 @@
+environment {
+    XDG_SESSION_TYPE "wayland"
+    QT_QPA_PLATFORM "wayland"
+    QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+    QT_AUTO_SCREEN_SCALE_FACTOR "1"
+    GDK_SCALE "1"
+    GDK_BACKEND "wayland"
+    CLUTTER_BACKEND "wayland"
+    MOZ_ENABLE_WAYLAND "1"
+    XCURSOR_THEME "Breeze"
+    HYPRCURSOR_SIZE "24"
+    OZONE_PLATFORM "wayland"
+    ELECTRON_OZONE_PLATFORM_HINT "wayland"
+    SDL_VIDEODRIVER "wayland"
+}

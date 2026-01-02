@@ -1,0 +1,22 @@
+output "eDP-1" {
+    // off
+    // The format is "<width>x<height>" or "<width>x<height>@<refresh rate>".
+    mode "2880x1920"
+    scale 1.8
+    // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
+    // transform "normal"
+    hot-corners {
+        off
+    }
+    variable-refresh-rate
+    focus-at-startup
+
+}
+
+output "Dell Inc. DELL G2410 T742K994364U" {
+    mode "1920x1080@60"
+    scale 1
+    hot-corners {
+        off
+    }
+}

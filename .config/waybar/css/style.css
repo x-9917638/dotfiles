@@ -1,0 +1,178 @@
+@import "colors.css";
+
+* {
+    font-family: "JetBrains Mono Nerd Font";
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+}
+
+#waybar {
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    border-radius: 15px;
+    color: @fg;
+    padding: 0 15px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    margin-bottom: -10px;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+tooltip {
+    padding: 8px;
+    border-radius: 15px;
+    background: transparent;
+}
+
+tooltip label {
+    padding: 8px;
+    font-weight: bold;
+}
+
+.popup * {
+    box-shadow: none;
+    outline: none;
+}
+
+#tray menu,
+menu {
+    border-radius: 10px;
+    font-weight: 700;
+    color: @fg;
+}
+
+#tray menu > *,
+menu > * {
+    padding: 0 0;
+}
+
+#tray menu > *:hover,
+menu > *:hover {
+    border-radius: 10px;
+    background-color: @inactive;
+}
+
+/* global paddings */
+#backlight,
+#wireplumber,
+#network,
+#temperature,
+#bluetooth,
+#battery,
+#memory,
+#cpu,
+#load {
+    padding: 0 7px;
+}
+
+#workspaces,
+#bluetooth,
+#battery,
+#memory,
+#temperature,
+#network,
+#wireplumber,
+#backlight,
+#cpu,
+#load {
+    background: transparent;
+    border-radius: 15px;
+    margin: 0 3px;
+}
+
+#network {
+    padding: 0;
+}
+
+#custom-start,
+#custom-logout,
+#gright1,
+#gleft1,
+#gright2,
+#gleft2,
+#custom-ctlcenter,
+#power-profiles-daemon {
+    padding: 0 9px;
+    border-radius: 15px;
+    background: transparent;
+}
+
+#clock {
+    padding: 0;
+    border-radius: 15px;
+    background: transparent;
+}
+
+/* single icons cool size  */
+
+#gright2,
+#gleft2 {
+    margin: 0;
+}
+
+#gleft1 {
+    margin: 0;
+}
+
+#gright1 {
+    margin: 0;
+}
+
+#memory.critical,
+#cpu.critical,
+#temperature.critical,
+#battery.critical,
+#network.disconnected {
+    color: @red;
+}
+
+#memory.warning,
+#cpu.warning,
+#temperature.warning,
+#battery.warning {
+    color: @yellow;
+}
+
+#workspaces button {
+    color: @workspace-fg;
+    font-size: 14px;
+    border-radius: 15px;
+    margin: 0 7px;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+#mpris,
+#window {
+    margin: 0;
+}
+
+#mpris.paused {
+    color: @inactive;
+}
+
+#power-profiles-daemon {
+    margin-left: 5px;
+    padding: 0;
+}
+
+#power-profiles-daemon.performance {
+    color: @red;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @green;
+}

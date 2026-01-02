@@ -1,0 +1,65 @@
+[templates.kitty]
+input_path = '~/.config/matugen/templates/kitty.conf'
+output_path = '~/.config/kitty/current-theme.conf'
+post_hook = 'pkill -SIGUSR1 kitty'
+
+[templates.swaync]
+input_path = '~/.config/matugen/templates/swaync.css'
+output_path = '~/.config/swaync/colors.css'
+
+[templates.swaylock]
+input_path = '~/.config/matugen/templates/swaylock'
+output_path = '~/.config/swaylock/config'
+
+[templates.discord]
+input_path = '~/.config/matugen/templates/discord.css'
+output_path = '~/.config/vesktop/themes/theme.css'
+
+# ===== TO BE IMPROVED =====
+
+# [templates.gtk3]
+# input_path = '~/.config/matugen/templates/gtk-colors.css'
+# output_path = '~/.config/gtk-3.0/colors.css'
+
+# [templates.gtk4]
+# input_path = '~/.config/matugen/templates/gtk-colors.css'
+# output_path = '~/.config/gtk-4.0/colors.css'
+
+# [templates.qtct]
+# input_path = '~/.config/matugen/templates/qtct-colors.conf'
+# output_path = '~/.config/default-colors-qtct.conf'
+
+# ==========================
+
+[templates.sugarcandy]
+input_path = "~/.config/matugen/templates/sugarcandy.conf"
+output_path = "/usr/share/sddm/themes/sugar-candy/theme.conf.user"
+
+[templates.btop]
+input_path = '~/.config/matugen/templates/btop.theme'
+output_path = '~/.config/btop/themes/pretty.theme'
+
+[templates.cava]
+input_path = '~/.config/matugen/templates/cava'
+output_path = '~/.config/cava/config'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/waybar.css'
+output_path = '~/.config/waybar/css/colors.css'
+
+[templates.niri]
+input_path = '~/.config/matugen/templates/niri.kdl'
+output_path = '~/.config/niri/colors.kdl'
+
+[config]
+caching = true
+
+[config.custom_colors]
+red = "#c87878"
+blue = "#7878c8"
+green = "#78c878"
+orange = "#c8a578"
+purple = "#a578a5"
+yellow = "#c8c878"
+cyan = "#78c8c8"
+magenta = "#c878c8"

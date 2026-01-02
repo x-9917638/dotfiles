@@ -1,0 +1,235 @@
+// Default
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "padding": {
+      "top": 2,
+    },
+  },
+  "display": {
+    "hideCursor": true,
+    "separator": "   ",
+    "color": {
+      "keys": "#F5A9B8",
+      "title": "italic_",
+      "output": "#5BCEFA",
+      "separator": "#FFFFFF",
+    },
+    "brightColor": true,
+    "duration": {
+      "abbreviation": true,
+    },
+    "size": {
+      "maxPrefix": "YB",
+      "binaryPrefix": "si",
+      "ndigits": 2,
+      "spaceBeforeUnit": "default",
+    },
+    "temp": {
+      "unit": "C",
+      "ndigits": 2,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91",
+      },
+      "spaceBeforeUnit": "default",
+    },
+    "percent": {
+      "type": ["num", "num-color"],
+      "ndigits": 0,
+      "color": {
+        "green": "32",
+        "yellow": "93",
+        "red": "91",
+      },
+      "spaceBeforeUnit": "default",
+      "width": 0,
+    },
+    "bar": {
+      "char": {
+        "elapsed": "■",
+        "total": "-",
+      },
+      "border": {
+        "left": "[ ",
+        "right": " ]",
+        "leftElapsed": "",
+        "rightElapsed": "",
+      },
+      "color": {
+        "elapsed": "auto",
+        "total": "97",
+        "border": "97",
+      },
+      "width": 10,
+    },
+    "fraction": {
+      "ndigits": 2,
+    },
+    "noBuffer": false,
+    "key": {
+      "width": 0,
+      "type": "string",
+      "paddingLeft": 0,
+    },
+    "freq": {
+      "ndigits": 2,
+      "spaceBeforeUnit": "default",
+    },
+    "constants": [],
+  },
+  "general": {
+    "thread": true,
+    "processingTimeout": 5000,
+    "detectVersion": true,
+    "playerName": "",
+    "dsForceDrm": false,
+  },
+  "modules": [
+    {
+      "type": "title",
+      "key": " ",
+      "keyIcon": "",
+      "fqdn": false,
+      "color": {
+        "user": "#F5A9B8",
+        "at": "#FFFFFF",
+        "host": "#5BCEFA",
+      },
+    },
+    {
+      "type": "separator",
+      "string": "-",
+      "outputColor": "",
+      "times": 0,
+    },
+    {
+      "type": "os",
+    },
+    {
+      "type": "host",
+      "key": "Host",
+      "format": "{vendor} {name}",
+    },
+    {
+      "type": "kernel",
+    },
+    {
+      "type": "uptime",
+    },
+    {
+      "type": "packages",
+      "disabled": ["apk"],
+      "combined": false,
+    },
+    {
+      "type": "shell",
+    },
+    {
+      "type": "display",
+      "compactType": null,
+      "preciseRefreshRate": true,
+      "key": "Display",
+      "format": "{width} x {height} - {inch}\" @ {scale-factor}, {preferred-refresh-rate}Hz",
+      "order": null,
+    },
+    {
+      "type": "wm",
+      "detectPlugin": false,
+    },
+    {
+      "type": "terminal",
+    },
+    {
+      "type": "terminalfont",
+      "key": "Font",
+    },
+    {
+      "type": "cpu",
+      "temp": true,
+      "showPeCoreCount": true,
+    },
+    {
+      "type": "gpu",
+      "keyIcon": "󰾲",
+      "driverSpecific": true,
+      "detectionMethod": "auto",
+      "temp": true,
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+    },
+    {
+      "type": "memory",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+    },
+    {
+      "type": "swap",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+      "separate": false,
+    },
+    {
+      "type": "disk",
+      "keyIcon": "",
+      "showRegular": true,
+      "showExternal": false,
+      "showHidden": false,
+      "showSubvolumes": false,
+      "showReadOnly": true,
+      "showUnknown": false,
+      "folders": "",
+      "hideFolders": "/efi:/boot:/boot/*",
+      "hideFS": "ext4", // Hide all that is not btrfs. For now, just ext4
+      "useAvailable": false,
+      "key": "Disk",
+      "format": "{size-used} / {size-total} ({size-percentage}) @ {mountpoint} - {filesystem}",
+      "percent": {
+        "green": 50,
+        "yellow": 80,
+        "type": 0,
+      },
+    },
+    {
+      "type": "localip",
+      "showIpv4": true,
+      "showIpv6": true,
+      "showMac": true,
+      "showLoop": false,
+      "showPrefixLen": false,
+      "showMtu": false,
+      "showSpeed": false,
+      "showFlags": false,
+      "compact": false,
+      "defaultRouteOnly": true,
+      "showAllIps": false,
+      "namePrefix": "",
+      "key": "Local IP",
+      "format": "{ipv4} {ipv6} ({mac}) @ {ifname}",
+    },
+    {
+      "type": "battery",
+      "temp": true,
+      "percent": {
+        "green": 50,
+        "yellow": 20,
+        "type": 0,
+      },
+      "key": "Battery",
+    },
+    {
+      "type": "locale",
+    },
+    "break",
+  ],
+}

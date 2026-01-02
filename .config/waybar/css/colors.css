@@ -1,0 +1,15 @@
+/*
+* Css Colors
+* Generated with Matugen
+*/
+@define-color background rgba(20, 19, 24, 0.5);
+@define-color tooltip-bg @background;
+@define-color module-bg @background;
+@define-color inactive rgb(230, 225, 233);
+@define-color fg rgb(230, 225, 233);
+@define-color workspace-fg @fg;
+
+@define-color red #c87878;
+@define-color blue #7878c8;
+@define-color yellow #c8c878;
+@define-color green #78c878;

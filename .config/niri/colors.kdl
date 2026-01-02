@@ -1,0 +1,10 @@
+layout {
+    border {
+        width 3
+        urgent-color "#ffb4ab"
+
+        active-gradient from="#cbbeff" to="#625690" angle=45 relative-to="workspace-view"
+
+        inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
+    }
+}

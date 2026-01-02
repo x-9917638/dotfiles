@@ -1,0 +1,36 @@
+
+image=/home/val/Pictures/Wallpapers/vitamins.png
+effect-blur=10x1
+scaling=fill
+font="MapleMono-NF-CN-Italic"
+daemonize
+clock
+indicator
+indicator-radius=200
+indicator-thickness=20
+line-color=282A36
+ring-color=cbbeff
+inside-color=282A36
+key-hl-color=eeb8cb
+separator-color=00000000
+text-color=F8F8F2
+text-caps-lock-color=""
+line-ver-color=cbbeff
+ring-ver-color=cbbeff
+inside-ver-color=282A36
+text-ver-color=cac3dc
+ring-wrong-color=ffb4ab
+text-wrong-color=ffb4ab
+inside-wrong-color=282A36
+inside-clear-color=282A36
+text-clear-color=cac3dc
+ring-clear-color=cac3dc
+line-clear-color=cac3dc
+line-wrong-color=282A36
+bs-hl-color=cac3dc
+grace=2
+grace-no-mouse
+grace-no-touch
+datestr=%a, %B %e
+timestr=%I:%M %p
+ignore-empty-password

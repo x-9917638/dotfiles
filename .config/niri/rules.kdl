@@ -1,0 +1,67 @@
+// Window rules let you adjust behavior for individual windows.
+// Find more information on the wiki:
+// https://yalter.github.io/niri/Configuration:-Window-Rules
+window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+
+    block-out-from "screen-capture"
+}
+window-rule {
+    match title=r#"^pavucontrol$"#
+    match title=r#"^blueman-manager$"#
+    match title=r#"^nm-connection-editor$"#
+
+
+    match title=r#"^Picture-in-Picture$"#
+    match title=r#"^KeePassXC - Browser Access Request$"#
+
+    match title=r#"^Open$"#
+    match title=r#"^Choose Files$"#
+    match title=r#"^Save As$"#
+    match title=r#"^Confirm to replace files$"#
+    match title=r#"^File Operation Progress$"#
+    match title=r#"^Open File$"#
+    match title=r#"^Open Folder$"#
+
+    match app-id=r#"^VSCode-Term$"#
+    match app-id=r#"^.*waypaper.*$"#
+
+    open-floating true
+}
+window-rule {
+    match app-id=r#"^zen$"#
+    opacity 0.9
+}
+window-rule {
+    match app-id=r#"^code$"#
+    opacity 0.8
+}
+window-rule {
+    match app-id=r#"^.*btop.*$"#
+
+    open-floating true
+    default-column-width { fixed 900; }
+    default-window-height { fixed 700; }
+}
+window-rule {
+    match app-id=r#"^float-tty-clock$"#
+    
+    open-floating true
+    default-column-width { fixed 500; }
+    default-window-height { fixed 270; }
+}
+layer-rule {
+    match namespace="^notifications$"
+
+    block-out-from "screencast"
+}
+layer-rule {
+    match namespace="^launcher$"
+
+    opacity 0.95
+}
+window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
+}

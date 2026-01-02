@@ -1,0 +1,36 @@
+
+image={{ image }}
+effect-blur=10x1
+scaling=fill
+font="MapleMono-NF-CN-Italic"
+daemonize
+clock
+indicator
+indicator-radius=200
+indicator-thickness=20
+line-color=282A36
+ring-color={{colors.primary.default.hex_stripped}}
+inside-color=282A36
+key-hl-color={{colors.tertiary.default.hex_stripped}}
+separator-color=00000000
+text-color=F8F8F2
+text-caps-lock-color=""
+line-ver-color={{colors.primary.default.hex_stripped}}
+ring-ver-color={{colors.primary.default.hex_stripped}}
+inside-ver-color=282A36
+text-ver-color={{colors.secondary.default.hex_stripped}}
+ring-wrong-color={{colors.error.default.hex_stripped}}
+text-wrong-color={{colors.error.default.hex_stripped}}
+inside-wrong-color=282A36
+inside-clear-color=282A36
+text-clear-color={{colors.secondary.default.hex_stripped}}
+ring-clear-color={{colors.secondary.default.hex_stripped}}
+line-clear-color={{colors.secondary.default.hex_stripped}}
+line-wrong-color=282A36
+bs-hl-color={{colors.secondary.default.hex_stripped}}
+grace=2
+grace-no-mouse
+grace-no-touch
+datestr=%a, %B %e
+timestr=%I:%M %p
+ignore-empty-password

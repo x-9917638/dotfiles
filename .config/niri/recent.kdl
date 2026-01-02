@@ -1,0 +1,4 @@
+recent-windows {
+    Alt+Tab                { next-window; }
+    Alt+Shift+Tab          { previous-window; }
+}
