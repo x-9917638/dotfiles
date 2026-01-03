@@ -51,6 +51,10 @@ output_path = '~/.config/waybar/css/colors.css'
 input_path = '~/.config/matugen/templates/niri.kdl'
 output_path = '~/.config/niri/colors.kdl'
 
+[templates.zed]
+input_path = '~/.config/matugen/templates/zed.json'
+output_path = '~/.config/zed/themes/theme.json'
+
 [config]
 caching = true
 

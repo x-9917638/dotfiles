@@ -7,6 +7,57 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "gutter": {
+    "min_line_number_digits": 3,
+    "runnables": false
+  },
+  "relative_line_numbers": "enabled",
+  "autosave": "on_focus_change",
+  "minimap": {
+    "show": "never",
+    "thumb_border": "left_open"
+  },
+  "zoomed_padding": true,
+  "active_pane_modifiers": {
+    "inactive_opacity": 0.0
+  },
+  "window_decorations": "server",
+  "use_system_window_tabs": false,
+  "centered_layout": {
+    "left_padding": 0.2
+  },
+  "bottom_dock_layout": "contained",
+  "tabs": {
+    "show_close_button": "hover",
+    "show_diagnostics": "off",
+    "close_position": "right",
+    "git_status": false
+  },
+  "tab_bar": {
+    "show": true
+  },
+  "diagnostics": {
+    "button": true
+  },
+  "terminal": {
+    "button": true
+  },
+  "status_bar": {
+    "cursor_position_button": true,
+    "active_language_button": true
+  },
+  "project_panel": {
+    "button": true
+  },
+  "title_bar": {
+    "show_menus": false,
+    "show_user_picture": false,
+    "show_onboarding_banner": false,
+    "show_project_items": true,
+    "show_branch_name": true,
+    "show_branch_icon": false,
+    "show_sign_in": false
+  },
   "buffer_font_family": "Maple Mono NF CN",
   "ui_font_family": ".ZedSans",
   "ui_font_weight": 500.0,
@@ -32,6 +83,6 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "One Dark",
+    "dark": "Material You",
   },
 }
