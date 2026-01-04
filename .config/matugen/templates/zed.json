@@ -1,10 +1,10 @@
 {
-  "name": "Material You",
+  "name": "Material Autogen",
   // Adapted from the Catpuccin Blur themes
   "author": "github.com/x-9917638",
   "themes": [
     {
-      "name": "Material You",
+      "name": "Material (Blur)",
       "appearance": "dark",
       "style": {
         "accents": [

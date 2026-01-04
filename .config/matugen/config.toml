@@ -15,21 +15,18 @@ output_path = '~/.config/swaylock/config'
 input_path = '~/.config/matugen/templates/discord.css'
 output_path = '~/.config/vesktop/themes/theme.css'
 
-# ===== TO BE IMPROVED =====
 
-# [templates.gtk3]
-# input_path = '~/.config/matugen/templates/gtk-colors.css'
-# output_path = '~/.config/gtk-3.0/colors.css'
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
 
-# [templates.gtk4]
-# input_path = '~/.config/matugen/templates/gtk-colors.css'
-# output_path = '~/.config/gtk-4.0/colors.css'
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
 
 # [templates.qtct]
 # input_path = '~/.config/matugen/templates/qtct-colors.conf'
 # output_path = '~/.config/default-colors-qtct.conf'
-
-# ==========================
 
 [templates.sugarcandy]
 input_path = "~/.config/matugen/templates/sugarcandy.conf"
