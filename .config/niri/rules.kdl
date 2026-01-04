@@ -30,14 +30,6 @@ window-rule {
     open-floating true
 }
 window-rule {
-    match app-id=r#"^zen$"#
-    opacity 0.9
-}
-window-rule {
-    match app-id=r#"^code$"#
-    opacity 0.8
-}
-window-rule {
     match app-id=r#"^.*btop.*$"#
 
     open-floating true
@@ -46,10 +38,14 @@ window-rule {
 }
 window-rule {
     match app-id=r#"^float-tty-clock$"#
-    
+
     open-floating true
     default-column-width { fixed 500; }
     default-window-height { fixed 270; }
+}
+window-rule {
+    match app-id="^thunar$"
+    opacity 0.85
 }
 layer-rule {
     match namespace="^notifications$"
@@ -57,7 +53,7 @@ layer-rule {
     block-out-from "screencast"
 }
 layer-rule {
-    match namespace="^launcher$"
+    match namespace="^walker$"
 
     opacity 0.95
 }

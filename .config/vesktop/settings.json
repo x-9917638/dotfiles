@@ -8,5 +8,10 @@
     "staticTitle": true,
     "disableMinSize": true,
     "appBadge": false,
-    "splashPixelated": true
+    "splashPixelated": true,
+    "spellCheckLanguages": [
+        "en-GB",
+        "en-AU",
+        "en"
+    ]
 }
