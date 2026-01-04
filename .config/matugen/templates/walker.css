@@ -1,0 +1,5 @@
+@define-color window_bg_color {{colors.surface.default.hex}}cc;
+@define-color accent_bg_color {{colors.primary.default.hex}};
+@define-color theme_fg_color {{colors.on_surface.default.hex}};
+@define-color error_bg_color {{colors.error.default.hex}};
+@define-color error_fg_color {{colors.on_error.default.hex}};

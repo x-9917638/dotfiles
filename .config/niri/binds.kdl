@@ -8,8 +8,8 @@ binds {
     Ctrl+Super+W           repeat=false { spawn "waypaper"; }
 
     // Netcat Magic :3
-    Super+D                cooldown-ms=100 { spawn-sh "pkill -f ^walker\\$ || nc -U /run/user/1000/walker/walker.sock"; }
-    Super+V                cooldown-ms=100 { spawn-sh "pkill -f ^walker\\$ || walker -m clipboard"; }
+    Super+D                cooldown-ms=100 { spawn-sh "nc -U /run/user/1000/walker/walker.sock"; }
+    Super+V                cooldown-ms=100 { spawn-sh "walker -m clipboard"; }
 
     Alt+F4                 { close-window; }
     Super+F                { fullscreen-window; }

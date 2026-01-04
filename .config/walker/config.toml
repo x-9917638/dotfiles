@@ -1,0 +1,22 @@
+force_keyboard_focus = false
+close_when_open = true
+click_to_close = true
+disable_mouse = true
+hide_quick_activation = true
+selection_wrap = false
+theme = "theme"
+
+[keybinds]
+close = ["Escape"]
+next = ["Down", "j"]
+previous = ["Up", "k"]
+left = ["Left", "l"]
+right = ["Right", "h"]
+down = ["Down", "j"]
+up = ["Up", "k"]
+toggle_exact = ["ctrl e"]
+resume_last_query = ["ctrl r"]
+quick_activate = ["F1", "F2", "F3", "F4", "F5", "F6"]
+page_down = ["Page_Down"]
+page_up = ["Page_Up"]
+show_actions = ["alt j"]
