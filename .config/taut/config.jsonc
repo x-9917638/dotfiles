@@ -1,0 +1,34 @@
+{
+  // Taut Plugin Configuration
+  // Edit this file to configure your plugins
+
+  "plugins": {
+    // Shows the ID of private channels
+    "PrivateChannel": {
+      "enabled": true,
+    },
+    // Makes Slack links at the start of your messages invisible, like a forwarded message that works in threads
+    // Also makes links with a display text of "." at the start of your messages invisible
+    "InvisibleForward": {
+      "enabled": true,
+    },
+    // Shows a red squiggle on users who are not IDV verified
+    // Shows an orange squiggle on users who verified ID but have since become >18
+    "IdvStatus": {
+      "enabled": true,
+    },
+    // Shows an indicator next to every user showing their Hackatime status (Hackatime admins only)
+    "ShinigamiEyes": {
+      "enabled": false,
+      // https://hackatime.hackclub.com/admin/admin_api_keys
+      "apiToken": "",
+      // Show status emoji next to names on messages
+      "nameEmojis": true,
+    },
+    // Adds a little cat that chases your cursor around the screen
+    "Oneko": {
+      "enabled": false,
+      "speed": 10,
+    },
+  },
+}
