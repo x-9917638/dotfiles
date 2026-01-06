@@ -57,7 +57,7 @@
         "panel.indent_guide": "{{colors.surface.default.hex | lighten: -10.0}}99",
         "panel.indent_guide_active": "{{colors.surface.default.hex | lighten: +20.0}}",
         "panel.indent_guide_hover": "{{colors.on_surface.default.hex | lighten: -20.0}}",
-        "panel.overlay_background": "{{colors.surface.default.hex}}", // idk
+        "panel.overlay_background": "{{colors.surface.default.hex}}b3", // idk
         "pane.focused_border": "#00000010", // idk what this is.
         "pane_group.border": "{{colors.surface_variant.default.hex}}",
         "scrollbar.thumb.background": "{{colors.surface.default.hex | lighten: +20.0}}a0",

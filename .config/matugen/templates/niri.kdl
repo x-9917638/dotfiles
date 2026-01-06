@@ -1,6 +1,7 @@
 layout {
     border {
-        width 3
+        on
+        width 1
         urgent-color "{{colors.error.default.hex}}"
 
         active-gradient from="{{colors.primary.default.hex}}" to="{{colors.inverse_primary.default.hex}}" angle=45 relative-to="workspace-view"
