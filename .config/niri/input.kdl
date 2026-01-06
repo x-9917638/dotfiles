@@ -26,7 +26,7 @@ input {
     mouse {
         accel-profile "flat"
     }
-    focus-follows-mouse max-scroll-amount="50%"
+    focus-follows-mouse max-scroll-amount="80%"
     workspace-auto-back-and-forth
     disable-power-key-handling
 }

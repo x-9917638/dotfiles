@@ -1,6 +1,7 @@
 layout {
     border {
-        width 3
+        on
+        width 1
         urgent-color "#ffb4ab"
 
         active-gradient from="#e7b6f1" to="#784f83" angle=45 relative-to="workspace-view"

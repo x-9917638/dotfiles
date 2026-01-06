@@ -3,6 +3,7 @@ layout {
     center-focused-column "on-overflow"
     always-center-single-column
     empty-workspace-above-first
+    // Unsupported in fork.
     // default-column-display "tabbed"
     tab-indicator {
         hide-when-single-tab
