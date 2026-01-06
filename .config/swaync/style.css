@@ -1,9 +1,6 @@
 /* Colors */
 
 @import "colors.css";
-@define-color background @blur_background;
-@define-color groupbackground #363636;
-@define-color buttoncolor #4a4a4a;
 @define-color bordercolor @primary;
 @define-color fontcolor @on_surface;
 
@@ -11,7 +8,7 @@
     --border-radius: 22px;
     --cc-bg: transparent;
 
-    --widget-background: rgba(46, 46, 46, 0.7);
+    --widget-background: @transparent_backgrond;
     --noti-bg-alpha: 0.6;
 
     --padding: calc(var(--border-radius) / 2);
@@ -27,7 +24,7 @@
     background: var(--widget-background);
     border-radius: var(--border-radius);
     padding: calc(var(--border-radius) / 2);
-    border: var(--border);
+    border: @bordercolor;
 }
 
 .control-center-list-placeholder {
@@ -58,7 +55,7 @@
 }
 .widget-mpris-player {
     box-shadow: none;
-    border: var(--border);
+    border: @bordercolor;
     margin: 0 var(--padding);
 }
 .widget-mpris-player:only-child {
