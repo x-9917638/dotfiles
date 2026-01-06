@@ -13,8 +13,8 @@
 /* SETTINGS */
 :root {
   /* ACCENT COLORS */
-  --main-color: #ff9480;
-  --hover-color: #ffb4a6;
+  --main-color: #dc94ea;
+  --hover-color: #e7b6f1;
   --success-color: #43b581;
   --danger-color: #982929;
   /* STATUS COLORS */
@@ -27,7 +27,7 @@
   --background-shading-percent: 10%;
   --background-image: transparent;
   --background-attachment: fixed;
-  --background-overlay: rgba(54, 36, 33, 0.2)
+  --background-overlay: rgba(47, 38, 49, 0.2)
   --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
   /* USER POPOUT BACKGROUND */
   --user-popout-image: var(--background-image);

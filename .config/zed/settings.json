@@ -75,6 +75,9 @@
       // Hacky stuff :3
       "language_servers": ["hackatime"],
     },
+    "Rust": {
+      "formatter": "language_server",
+    },
   },
   "vim_mode": true,
   "icon_theme": {
