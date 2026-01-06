@@ -48,11 +48,39 @@ window-rule {
     opacity 0.85
 }
 layer-rule {
-    match namespace="^notifications$"
+    match namespace="^swaync-notification-window$"
+
+    geometry-corner-radius 4
+
+    blur {
+      on
+      ignore-alpha 0.2
+      x-ray true
+    }
 
     block-out-from "screencast"
 }
 window-rule {
     geometry-corner-radius 10
     clip-to-geometry true
+}
+
+
+// Maintain a whitelist for blur
+window-rule { blur { off; }; }
+window-rule {
+    match app-id="^dev.zed.Zed$"
+    match app-id="thunar"
+    blur {
+      on
+    }
+}
+
+layer-rule {
+    match namespace="^walker$"
+    blur {
+        on
+        ignore-alpha 0.45
+        x-ray true
+    }
 }

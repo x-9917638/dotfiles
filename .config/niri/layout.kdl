@@ -3,7 +3,7 @@ layout {
     center-focused-column "on-overflow"
     always-center-single-column
     empty-workspace-above-first
-    default-column-display "tabbed"
+    // default-column-display "tabbed"
     tab-indicator {
         hide-when-single-tab
     }
@@ -29,5 +29,10 @@ layout {
         offset x=0 y=5
         // You can also change the shadow color and opacity.
         color "#0007"
+    }
+    blur {
+        noise 0.04
+        passes 3
+        radius 6
     }
 }
