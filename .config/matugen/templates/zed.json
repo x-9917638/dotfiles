@@ -46,7 +46,7 @@
         "icon.accent": "{{colors.primary.default.hex}}",
         "status_bar.background": "{{colors.surface_container_low.default.hex}}bf",
         "title_bar.background": "{{colors.surface.default.hex}}bf",
-        "title_bar.inactive_background": "{{colors.surface.default.hex | lighten: -10.0}}bf",
+        "title_bar.inactive_background": "{{colors.surface.default.hex}}bf",
         "toolbar.background": "#00000000",
         "tab_bar.background": "#00000000",
         "tab.inactive_background": "#00000000",
