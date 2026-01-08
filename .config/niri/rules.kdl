@@ -45,7 +45,7 @@ window-rule {
 }
 window-rule {
     match app-id="^thunar$"
-    opacity 0.85
+    opacity 0.7
 }
 layer-rule {
     match namespace="^swaync-notification-window$"
@@ -70,10 +70,22 @@ window-rule {
 window-rule { blur { off; }; }
 window-rule {
     match app-id="^dev.zed.Zed$"
-    match app-id="thunar"
+    match app-id="^thunar$"
+    match app-id="^kitty$"
+    match app-id="^vesktop$"
+    match app-id="^btop$"
     blur {
       on
     }
+}
+
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=10 y=10 relative-to="bottom-right"
+}
+
+window-rule {
+    draw-border-with-background false
 }
 
 layer-rule {

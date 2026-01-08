@@ -13,5 +13,6 @@
         "en-GB",
         "en-AU",
         "en"
-    ]
+    ],
+    "customTitleBar": false
 }

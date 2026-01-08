@@ -80,7 +80,7 @@
     "format-bluetooth": "{icon} {volume}%",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
     "on-click-right": "pavucontrol -t 4",
-    "scroll-step": 2,
+    "scroll-step": 1,
     "tooltip": true,
     "tooltip-format": "{volume}%",
     "format-muted": "{icon}",
