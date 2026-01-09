@@ -1,0 +1,10 @@
+/* Hide the forward & backward buttons if they are disabld */
+#back-button[disabled="true"],
+#forward-button[disabled="true"] {
+    display: none;
+}
+
+/* Hide stupid (x) */
+.titlebar-button.titlebar-close {
+    display: none;
+}
