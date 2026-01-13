@@ -142,9 +142,9 @@ user_pref("pdfjs.enableScripting", false);
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.ui.enabled", true);
 user_pref("dom.forms.autocomplete.formautofill", true);
-user_pref("browser.tabs.allow_transparent_browser", true);
-user_pref("widget.transparent-windows", true);
-user_pref("zen.widget.linux.transparency", true);
+user_pref("browser.tabs.allow_transparent_browser", false);
+user_pref("widget.transparent-windows", false);
+user_pref("zen.widget.linux.transparency", false);
 user_pref("browser.uiCustomization.state", '{"placements":{"widget-overflow-fixed-list":[],"unified-extensions-area":[],"nav-bar":["back-button","forward-button","stop-reload-button","customizableui-special-spring1","vertical-spacer","urlbar-container","customizableui-special-spring2","unified-extensions-button"],"toolbar-menubar":["menubar-items"],"TabsToolbar":["tabbrowser-tabs"],"vertical-tabs":[],"PersonalToolbar":[],"zen-sidebar-top-buttons":["zen-toggle-compact-mode"],"zen-sidebar-foot-buttons":["downloads-button","zen-workspaces-button","zen-create-new-button"]},"seen":["developer-button","screenshot-button"],"dirtyAreaCache":["nav-bar","vertical-tabs","zen-sidebar-foot-buttons","PersonalToolbar","toolbar-menubar","TabsToolbar","zen-sidebar-top-buttons"],"currentVersion":23,"newElementCount":2}');
 user_pref("browser.urlbar.placeholderName", "Meow :3");
 

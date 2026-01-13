@@ -12,214 +12,110 @@
 @import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
 /* SETTINGS */
 :root {
-    /* ACCENT COLORS */
-    --main-color: #dc94ea;
-    --hover-color: #e7b6f1;
-    --success-color: #43b581;
-    --danger-color: #982929;
-    /* STATUS COLORS */
-    --online-color: #43b581;
-    --idle-color: #faa61a;
-    --dnd-color: #982929;
-    --streaming-color: #593695;
-    --offline-color: #808080;
-    /* APP BACKGROUND */
-    --background-shading-percent: 10%;
-    --background-image: transparent;
-    --background-attachment: fixed;
-    --background-overlay: rgba(47, 38, 49, 0.2)
-        --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
-    /* USER POPOUT BACKGROUND */
-    --user-popout-image: var(--background-image);
-    --user-popout-attachment: var(--background-attachment);
-    --user-popout-filter: var(--background-filter);
-    /* USER MODAL BACKGROUND */
-    --user-modal-image: var(--background-image);
-    --user-modal-attachment: var(--background-attachment);
-    --user-modal-filter: var(--background-filter);
-    /* HOME ICON */
-    --home-icon: url(https://clearvision.github.io/icons/discord.svg);
-    /* FONTS */
-    --main-font:
-        "Maple Mono NF CN", "gg sans", Whitney, "Helvetica Neue", Helvetica,
-        Arial, sans-serif;
-    --code-font:
-        "Maple Mono NF CN", Consolas, "gg mono", "Liberation Mono", Menlo,
-        Courier, monospace;
+  /* ACCENT COLORS */
+  --main-color: #dc94ea;
+  --hover-color: #e7b6f1;
+  --success-color: #43b581;
+  --danger-color: #982929;
+  /* STATUS COLORS */
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+  /* APP BACKGROUND */
+  --background-shading-percent: 10%;
+  --background-image: transparent;
+  --background-attachment: fixed;
+  --background-overlay: rgba(47, 38, 49, 0.2)
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: var(--background-image);
+  --user-popout-attachment: var(--background-attachment);
+  --user-popout-filter: var(--background-filter);
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: var(--background-image);
+  --user-modal-attachment: var(--background-attachment);
+  --user-modal-filter: var(--background-filter);
+  /* HOME ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  /* FONTS */
+  --main-font: "Maple Mono NF CN", "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --code-font: "Maple Mono NF CN", Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
 }
 
 /* THEME SPECIFIC SHADING */
 /* LIGHT THEME */
 :is(.theme-light, .theme-dark .theme-light) {
-    --background-shading: rgba(
-        252,
-        252,
-        252,
-        0.3
-    ); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
-    --card-shading: rgba(
-        252,
-        252,
-        252,
-        0.3
-    ); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
-    --popout-shading: rgba(
-        252,
-        252,
-        252,
-        0.7
-    ); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
-    --modal-shading: rgba(
-        252,
-        252,
-        252,
-        0.5
-    ); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
-    --input-shading: rgba(
-        0,
-        0,
-        0,
-        0.3
-    ); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
-    --normal-text: #36363c; /* text color [default: #36363c] */
-    --muted-text: #75757e; /* muted text color [default: #75757e] */
+  --background-shading: rgba(252, 252, 252, 0.3); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
+  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --normal-text: #36363c; /* text color [default: #36363c] */
+  --muted-text: #75757e; /* muted text color [default: #75757e] */
 }
 
 /* ASH THEME */
 :is(.theme-dark, .theme-light .theme-dark) {
-    --background-shading: rgba(
-        0,
-        0,
-        0,
-        0.4
-    ); /* app background shading color [default: rgba(0, 0, 0, 0.4)] */
-    --card-shading: rgba(
-        0,
-        0,
-        0,
-        0.2
-    ); /* cards background shading color [default: rgba(0, 0, 0, 0.2)] */
-    --popout-shading: rgba(
-        0,
-        0,
-        0,
-        0.6
-    ); /* popouts background shading color [default: rgba(0, 0, 0, 0.6)] */
-    --modal-shading: rgba(
-        0,
-        0,
-        0,
-        0.4
-    ); /* modals background shading color [default: rgba(0, 0, 0, 0.4)] */
-    --input-shading: rgba(
-        255,
-        255,
-        255,
-        0.05
-    ); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
-    --normal-text: #d8d8db; /* text color [default: #d8d8db] */
-    --muted-text: #aeaeb4; /* muted text color [default: #aeaeb4] */
+  --background-shading: rgba(0, 0, 0, 0.4); /* app background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --card-shading: rgba(0, 0, 0, 0.2); /* cards background shading color [default: rgba(0, 0, 0, 0.2)] */
+  --popout-shading: rgba(0, 0, 0, 0.6); /* popouts background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(0, 0, 0, 0.4); /* modals background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #d8d8db; /* text color [default: #d8d8db] */
+  --muted-text: #aeaeb4; /* muted text color [default: #aeaeb4] */
 }
 
 /* DARK THEME */
 :is(.theme-darker, .theme-light .theme-darker) {
-    --background-shading: rgba(
-        0,
-        0,
-        0,
-        0.6
-    ); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
-    --card-shading: rgba(
-        0,
-        0,
-        0,
-        0.3
-    ); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
-    --popout-shading: rgba(
-        0,
-        0,
-        0,
-        0.7
-    ); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
-    --modal-shading: rgba(
-        0,
-        0,
-        0,
-        0.5
-    ); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
-    --input-shading: rgba(
-        255,
-        255,
-        255,
-        0.05
-    ); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
-    --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
-    --muted-text: #94949c; /* muted text color [default: #94949c] */
+  --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --card-shading: rgba(0, 0, 0, 0.3); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
+  --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
+  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
+  --muted-text: #94949c; /* muted text color [default: #94949c] */
 }
 
 /* ONYX THEME */
 :is(.theme-midnight, .theme-light .theme-midnight) {
-    --background-shading: rgba(
-        0,
-        0,
-        0,
-        0.8
-    ); /* app background shading color [default: rgba(0, 0, 0, 0.8)] */
-    --card-shading: rgba(
-        0,
-        0,
-        0,
-        0.4
-    ); /* cards background shading color [default: rgba(0, 0, 0, 0.4)] */
-    --popout-shading: rgba(
-        0,
-        0,
-        0,
-        0.8
-    ); /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
-    --modal-shading: rgba(
-        0,
-        0,
-        0,
-        0.6
-    ); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
-    --input-shading: rgba(
-        255,
-        255,
-        255,
-        0.05
-    ); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
-    --normal-text: #dcdcde; /* text color [default: #dcdcde] */
-    --muted-text: #86868e; /* muted text color [default: #86868e] */
+  --background-shading: rgba(0, 0, 0, 0.8); /* app background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --card-shading: rgba(0, 0, 0, 0.4); /* cards background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --popout-shading: rgba(0, 0, 0, 0.8); /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --modal-shading: rgba(0, 0, 0, 0.6); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #dcdcde; /* text color [default: #dcdcde] */
+  --muted-text: #86868e; /* muted text color [default: #86868e] */
 }
 
 /* ADD ADDITIONAL CSS BELOW HERE */
 
 /* Connected to */
 .root_e373d2.connected_e373d2 {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /* Shiki codeblocks */
 .vc-shiki-container {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 /* Remove Help button from top right */
-.anchor_edefb8 [aria-label="Help"] {
-    display: none !important;
+.anchor_edefb8 [aria-label="Help"]{
+  display: none !important;
 }
 
 /*Follow to get this channel's updates in your own server.*/
 .visual-refresh .wrapper__44df5 {
-    background-color: var(--background-base-low);
-    border: 2px solid var(--main-color);
-    border-radius: var(--radius-sm);
-    height: var(--space-8);
-    margin: var(--space-16);
-    margin-top: 1%;
-    bottom: 10px;
-    width: auto;
+  background-color: var(--background-base-low);
+  border: 2px solid var(--main-color);
+  border-radius: var(--radius-sm);
+  height: var(--space-8);
+  margin: var(--space-16);
+  margin-top: 1%;
+  bottom: 10px;
+  width: auto;
 }
 
 /* Remove Avatar Decorations
@@ -233,10 +129,10 @@
 
 /*Vencord Notification Progressbar*/
 .vc-notification-progressbar {
-    height: 0.25rem;
-    border-radius: 5px;
-    margin-top: auto;
-    background-color: var(--main-color) !important;
+  height: .25rem;
+  border-radius: 5px;
+  margin-top: auto;
+  background-color: var(--main-color) !important;
 }
 
 /* Make nitro user profile transparent (globally)
@@ -246,12 +142,12 @@
 */
 
 .leading_c38106 {
-    visibility: hidden !important;
+  visibility: hidden !important;
 }
 
 .visual-refresh {
-    /* list hover animations */
-    .wrapper__2ea32 .link__2ea32
+  /* list hover animations */
+  .wrapper__2ea32 .link__2ea32
   /* channels */
   ,
   .container__91a9d
@@ -278,70 +174,70 @@
   /* stuff im too lazy to label */
   ,
   .outer_bf1984:is(.interactive_bf1984:hover, .active_bf1984) {
-        transition: margin-left 0.2s ease;
-        will-change: margin-left;
-    }
+    transition: margin-left 0.2s ease;
+    will-change: margin-left;
+  }
 
-    /* channels + servers*/
-    .wrapper__2ea32:hover .link__2ea32,
-    .side_b3f026 .item_b3f026:hover {
-        margin-left: 20px;
-        animation: hoverLeftBack 3s ease-in-out infinite;
-    }
+  /* channels + servers*/
+  .wrapper__2ea32:hover .link__2ea32,
+  .side_b3f026 .item_b3f026:hover {
+    margin-left: 20px;
+    animation: hoverLeftBack 3s ease-in-out infinite;
+  }
 
-    /* members + dms*/
-    .container__91a9d:hover,
-    .channel__972a0:hover {
-        margin-left: 28px;
-        animation: hoverLeftBack 3s ease-in-out infinite;
-    }
+  /* members + dms*/
+  .container__91a9d:hover,
+  .channel__972a0:hover {
+    margin-left: 28px;
+    animation: hoverLeftBack 3s ease-in-out infinite;
+  }
 
-    /* list hover channel dot */
-    .unread__2ea32 {
-        border-radius: 50%;
-        width: 8px;
-        height: 8px;
-        margin-left: -4px;
-        transition: 0.2s ease;
-        will-change: margin-left;
-    }
+  /* list hover channel dot */
+  .unread__2ea32 {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    transition: 0.2s ease;
+    will-change: margin-left;
+  }
 
-    .wrapper__2ea32:hover .unread__2ea32 {
-        margin-left: 12px;
-        animation: hoverLeftBack 3s ease-in-out infinite;
-    }
+  .wrapper__2ea32:hover .unread__2ea32 {
+    margin-left: 12px;
+    animation: hoverLeftBack 3s ease-in-out infinite;
+  }
 
-    /* server icons + server list */
-    .blobContainer_e5445c:hover,
-    .listItemWrapper__91816:hover {
-        margin-left: 10px;
-        animation: hoverLeftBack 3s ease-in-out infinite;
-    }
+  /* server icons + server list */
+  .blobContainer_e5445c:hover,
+  .listItemWrapper__91816:hover {
+    margin-left: 10px;
+    animation: hoverLeftBack 3s ease-in-out infinite;
+  }
 
-    /* messages + other stuff im too lazy to label */
-    /*  .messageListItem__5126c:hover, */
-    .listItemContents_fc004c:hover,
-    .outer_bf1984:hover {
-        margin-left: 15px;
-        animation: hoverLeftBack 3s ease-in-out infinite;
-    }
+  /* messages + other stuff im too lazy to label */
+/*  .messageListItem__5126c:hover, */
+  .listItemContents_fc004c:hover,
+  .outer_bf1984:hover {
+    margin-left: 15px;
+    animation: hoverLeftBack 3s ease-in-out infinite;
+  }
 
-    .container__0f2e8:hover {
-        margin-left: 28px;
-        animation: hoverLeftBack 3s ease-in-out infinite;
-    }
+  .container__0f2e8:hover {
+    margin-left: 28px;
+    animation: hoverLeftBack 3s ease-in-out infinite;
+  }
 }
 
 /* oscillate animation */
 @keyframes hoverLeftBack {
-    0%,
-    100% {
-        transform: translateX(0);
-    }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
 
-    50% {
-        transform: translateX(-5px);
-    }
+  50% {
+    transform: translateX(-5px);
+  }
 }
 
 /* drop shadow for stuff */
@@ -364,53 +260,54 @@
 .option__56fec.user__56fec .displayUsername__56fec,
 .option__56fec.user__56fec .displayedNick__56fec,
 .timestamp_c19a55 {
-    filter: drop-shadow(1px 0.95px 0.5px #000000) blur(0.4px) sepia(30%);
+  filter: drop-shadow(1px 0.95px 0.5px #000000) blur(0.4px) sepia(30%);
 }
 
 /* exclude drop shadow from emojis and stuff */
 .messageContent_c19a55 .emojiContainer__75abc {
-    filter: none;
+  filter: none;
 }
 .wrapper_f61d60 {
-    filter: none;
+  filter: none;
 }
 
 /*"Welcome to the Server" and "Explore the Server" Panel Background Fix*/
 .optionContainer__949ab {
-    background-color: transparent;
-    border: 1px solid var(--border-normal);
+  background-color: transparent;
+  border: 1px solid var(--border-normal);
 }
 
 .optionContainer__949ab:hover {
-    background-color: transparent;
-    border: 1px solid var(--border-normal);
-    background: linear-gradient(to right, var(--hover-color), #4a91e200);
+  background-color: transparent;
+  border: 1px solid var(--border-normal);
+  background: linear-gradient(to right, var(--hover-color), #4a91e200);
+
 }
 
 /*Smaller Message Text Area*/
 .scrollableContainer__74017 {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 8px;
-    max-height: var(--custom-channel-textarea-text-area-max-height);
-    overflow-x: hidden;
-    overflow-y: scroll;
-    margin: -7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  max-height: var(--custom-channel-textarea-text-area-max-height);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: -7px;
 }
 /*hide Quest Ads above user panel*/
 .content__60686 {
-    overflow: visible;
-    display: none;
+  overflow: visible;
+  display: none;
 }
-:is(.theme-light, .theme-dark) .wrapper__0d616 {
-    background: rgba(0, 0, 0, 0);
-    display: none;
+:is(.theme-light,.theme-dark) .wrapper__0d616 {
+  background: rgba(0, 0, 0, 0);
+  display: none;
 }
-/*Updated - Remove Server icon/title in titlebar*/
+ /*Updated - Remove Server icon/title in titlebar*/
 .title_c38106 {
-    display: none;
+  display: none;
 }
-.buttonChevron__37e49 {
+.buttonChevron__37e49   {
     display: none !important;
 }
 
@@ -418,8 +315,7 @@
     gap: 15px;
 }
 
-button.button__67645,
-span.button__67645 {
+button.button__67645, span.button__67645 {
     width: 20px;
 }
 /* Rounding Off The Outer Edges Of The Nameplate */

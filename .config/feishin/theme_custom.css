@@ -1,0 +1,123 @@
+/* Overrides the variables defined by the theme in custom css */
+:root {
+    /* App */
+    --theme-overlay-header:
+        linear-gradient(transparent 0%, rgb(24 24 37 / 85%) 100%),
+        var(--theme-background-noise);
+    --theme-overlay-subheader:
+        linear-gradient(
+            180deg,
+            rgb(24 24 37 / 5%) 0%,
+            var(--theme-colors-background) 100%
+        ),
+        var(--theme-background-noise);
+    --theme-scrollbar-handle-background: rgba(160, 160, 160, 20%);
+    --theme-scrollbar-handle-hover-background: rgba(160, 160, 160, 40%);
+    --theme-scrollbar-handle-active-background: none;
+    --theme-scrollbar-track-border-radius: none;
+    --theme-scrollbar-track-background: none;
+    --theme-scrollbar-track-hover-background: none;
+    --theme-scrollbar-size: none;
+    --theme-btn-subtle-fg: none;
+    --theme-btn-subtle-fg-hover: none;
+    --theme-btn-subtle-bg-hover: none;
+    --theme-card-default-radius: none;
+    
+    
+    /* Colors */
+    --theme-colors-background: rgb(24, 24, 37);
+    --theme-colors-background-alternate: rgb(17, 17, 27);
+    --theme-colors-black: rgb(0, 0, 0);
+    --theme-colors-border: rgb(255 255 255 / 10%);
+    --theme-colors-foreground: rgb(205, 214, 244);
+    --theme-colors-foreground-muted: rgb(186, 194, 222);
+    --theme-generic-border-color: none;
+    --theme-colors-primary: rgb(137, 180, 250);
+    --theme-colors-primary-filled: none;
+    --theme-colors-primary-contrast: none;
+    --theme-colors-state-error: rgb(243, 139, 168);
+    --theme-colors-state-info: rgb(137, 180, 250);
+    --theme-colors-state-success: rgb(166, 227, 161);
+    --theme-colors-state-warning: rgb(250, 179, 135);
+    --theme-colors-surface: rgb(30, 30, 46);
+    --theme-colors-surface-foreground: rgb(205, 214, 244);
+    --theme-colors-white: rgb(255, 255, 255);
+
+    --theme-colors-dark-1: none;
+    --theme-colors-dark-2: none;
+    --theme-colors-dark-3: none;
+    --theme-colors-dark-4: none;
+    --theme-colors-dark-5: none;
+    --theme-colors-dark-6: none;
+    --theme-colors-dark-7: none;
+    --theme-colors-dark-8: none;
+    --theme-colors-dark-9: none;
+    --theme-colors-dark-10: none;
+    --theme-colors-light-1: none;
+    --theme-colors-light-2: none;
+    --theme-colors-light-3: none;
+    --theme-colors-light-4: none;
+    --theme-colors-light-5: none;
+    --theme-colors-light-6: none;
+    --theme-colors-light-7: none;
+    --theme-colors-light-8: none;
+    --theme-colors-light-9: none;
+    --theme-colors-light-10: none;
+
+    
+    
+    /* Fonts and Spacing */
+    --theme-content-font-family: none;
+    --theme-root-font-size: none;
+    --theme-font-size-xs: none;
+    --theme-font-size-sm: none;
+    --theme-font-size-md: none;
+    --theme-font-size-lg: none;
+    --theme-font-size-xl: none;
+    --theme-font-size-2xl: none;
+    --theme-font-size-3xl: none;
+    --theme-font-size-4xl: none;
+    --theme-font-size-5xl: none;
+
+    --theme-breakpoint-xs: none;
+    --theme-breakpoint-sm: none;
+    --theme-breakpoint-md: none;
+    --theme-breakpoint-lg: none;
+    --theme-breakpoint-xl: none;
+    --theme-breakpoint-2xl: none;
+    --theme-breakpoint-3xl: none;
+
+    --theme-spacing-xs: none;
+    --theme-spacing-sm: none;
+    --theme-spacing-md: none;
+    --theme-spacing-lg: none;
+    --theme-spacing-xl: none;
+    --theme-spacing-2xl: none;
+    --theme-spacing-3xl: none;
+    --theme-spacing-4xl: none;
+
+    --theme-shadow-xs: none;
+    --theme-shadow-sm: none;
+    --theme-shadow-md: none;
+    --theme-shadow-lg: none;
+    --theme-shadow-xl: none;
+
+    --theme-radius-xs: none;
+    --theme-radius-sm: none;
+    --theme-radius-md: none;
+    --theme-radius-lg: none;
+    --theme-radius-xl: none;
+
+    --theme-line-height-xs: none;
+    --theme-line-height-sm: none;
+    --theme-line-height-md: none;
+    --theme-line-height-lg: none;
+    --theme-line-height-xl: none;
+    
+    --theme-content-max-width: none;
+    --theme-image-fit: none;
+    
+    /* Misc */
+    --theme-background-noise: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iLjc1IiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGZpbHRlcj0idXJsKCNhKSIgb3BhY2l0eT0iLjA1IiBkPSJNMCAwaDMwMHYzMDBIMHoiLz48L3N2Zz4=");
+    --theme-fullscreen-player-text-shadow: black 0px 0px 10px;
+}

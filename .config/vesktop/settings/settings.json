@@ -754,7 +754,8 @@
             "enabled": true
         },
         "FixImagesQuality": {
-            "enabled": true
+            "enabled": true,
+            "originalImagesInChat": false
         },
         "FullUserInChatbox": {
             "enabled": false
@@ -814,6 +815,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1767837525036
+        "settingsSyncVersion": 1768272893235
     }
 }
