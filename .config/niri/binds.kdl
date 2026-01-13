@@ -9,7 +9,9 @@ binds {
 
     // Netcat Magic :3
     Super+D                cooldown-ms=100 { spawn-sh "nc -U /run/user/1000/walker/walker.sock"; }
-    Super+V                cooldown-ms=100 { spawn-sh "walker -m clipboard"; }
+    // Restart Walker
+    Super+Shift+D          cooldown-ms=100 { spawn-sh "pkill -f '^walker --gapplication-service\\$';  walker --gapplication-service"; }
+    Super+V                cooldown-ms=100 { spawn "walker" "-m" "clipboard"; }
 
     Alt+F4                 { close-window; }
     Super+F                { fullscreen-window; }
@@ -84,17 +86,17 @@ binds {
     Super+Shift+9          { move-column-to-workspace 9; }
     Super+Shift+0          { move-column-to-workspace 10; }
 
-    XF86MonBrightnessUp    allow-when-locked=true  { spawn-sh "brightnessctl -q s +5%"; }
-    XF86MonBrightnessDown  allow-when-locked=true  { spawn-sh "brightnessctl -q s 5%-"; }
+    XF86MonBrightnessUp    allow-when-locked=true  { spawn "brightnessctl" "-q" "s" "+5%"; }
+    XF86MonBrightnessDown  allow-when-locked=true  { spawn "brightnessctl" "-q" "s" "5%-"; }
 
-    XF86AudioPlay          allow-when-locked=true  { spawn-sh "playerctl play-pause"; }
-    XF86AudioStop          allow-when-locked=true  { spawn-sh "playerctl stop"; }
-    XF86AudioPrev          allow-when-locked=true  { spawn-sh "playerctl previous"; }
-    XF86AudioNext          allow-when-locked=true  { spawn-sh "playerctl next"; }
+    XF86AudioPlay          allow-when-locked=true  { spawn "playerctl" "play-pause"; }
+    XF86AudioStop          allow-when-locked=true  { spawn "playerctl" "stop"; }
+    XF86AudioPrev          allow-when-locked=true  { spawn "playerctl" "previous"; }
+    XF86AudioNext          allow-when-locked=true  { spawn "playerctl" "next"; }
 
-    XF86AudioRaiseVolume   allow-when-locked=true  { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.01+"; }
-    XF86AudioLowerVolume   allow-when-locked=true  { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.01-"; }
-    XF86AudioMute          allow-when-locked=true  { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"; }
-    XF86AudioMicMute       allow-when-locked=true  { spawn-sh "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"; }
+    XF86AudioRaiseVolume   allow-when-locked=true  { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.01+"; }
+    XF86AudioLowerVolume   allow-when-locked=true  { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.01-"; }
+    XF86AudioMute          allow-when-locked=true  { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    XF86AudioMicMute       allow-when-locked=true  { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
 }
